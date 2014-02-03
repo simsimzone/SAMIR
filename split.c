@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-char** str_split(char *, char *);
 int str_any_char(char *, char);
 #define MAXWORD 100
 
