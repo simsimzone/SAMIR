@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
+void printcolor(int);
 int str_any_char(char *, char);
 #define MAXWORD 100
 
 int main(int argc, char **argv)
 {
-
 	char *delimeters = ":";
 	char word[MAXWORD];
 	char *input = word;
@@ -36,11 +34,11 @@ int main(int argc, char **argv)
 	putchar('\n');
 }
 
-printcolor(int i)
+void printcolor(int i)
 {
-	char command[8];
-	sprintf(command, "%c[%dm", 0x1B, i + 30);
-	printf(command);
+	char str[8];
+	sprintf(str, "%c[%dm", 0x1B, i + 30);
+	printf(str);
 }
 
 /* searches for c in s */
